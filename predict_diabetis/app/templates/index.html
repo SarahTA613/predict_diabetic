@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Predicted who has diabetis or not</h1>
+    <form action=" " method="POST">
+        {% csrf_token %}
+        Pregnancies: <input type="text" name="Pregnancies" required><br>
+        Glucose : <input type="text" name="Glucose" required><br>
+        BloodPressure: <input type="text" name="BloodPressure" required><br>
+        SkinThickness: <input type="text" name="SkinThickness" required><br>
+        Insulin : <input type="text" name="Insulin" required><br>
+        BMI : <input type="text" name="BMI" required><br>
+        DiabetesPedigreeFunction : <input type="text" name="DiabetesPedigreeFunction" required><br>
+        Age : <input type="text" name="Age" required><br>
+        <input type="submit">
+
+        
+    </form>
+    <h1>{{result}}</h1>
+    
+</body>
+</html>
